@@ -1,0 +1,32 @@
+# SkyRL-Gym
+
+A library of RL environments for LLMs implemented with the Gymnasium API.
+
+## Key Features
+
+- Simple `Environment` interface following the Gynasium API. 
+- Library of ready-built environments for math, code, search, and text-to-SQL.
+- A reusable `tool` interface. Developers can implement a tool once, and use it across any environment.
+- Supports multi-tool environments
+
+## Installation
+
+You can install the latest release from PyPI:
+
+```bash
+pip install skyrl-gym
+```
+
+or install from source:
+
+```bash
+git clone 
+cd SkyRL/skyrl-gym
+pip install -e .
+```
+
+## Documentation
+
+To build your first environment, see our [Walkthrough Docs]().
+
+All docs are available at []().

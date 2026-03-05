@@ -1,0 +1,5 @@
+This project includes code from the verl project.
+
+Copyright 2023-2025 Contributors.
+
+Licensed under Apache 2.0
