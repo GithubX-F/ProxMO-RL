@@ -284,14 +284,15 @@ These scripts handle all configuration and setup automatically. Refer to the scr
 ## Code Structure
 
 ```
+├── proxmo/
+│   └── core_proxmo.py           # ProxMO algorithm (episode/step advantage)
 ├── verl/
 │   ├── trainer/
 │   │   ├── main_ppo.py          # Training entry point
 │   │   └── ppo/
-│   │       └── ray_trainer.py    # Ray-distributed training
+│   │       └── ray_trainer.py   # Ray training; ProxMO via AdvantageEstimator.ProxMO
 │   └── workers/
-│       └── reward_manager/
-│           └── proxmo.py         # ProxMO algorithm implementation
+│       └── reward_manager/      # Other reward managers (e.g. DAPO, Prime)
 ├── agent_system/
 │   └── environments/
 │       ├── env_package/
@@ -303,6 +304,10 @@ These scripts handle all configuration and setup automatically. Refer to the scr
         ├── run_alfworld.sh
         └── run_webshop.sh
 ```
+
+## Citation
+
+If you find ProxMO helpful in your research or applications, please consider citing our paper. BibTeX will be added upon publication.
 
 ## 🎁 Key Features
 
